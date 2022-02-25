@@ -6,41 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contacto</title>
-    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,300;1,400;1,500;1,600&display=swap"
         rel="stylesheet">
 
-    <link href="CSS/style-Index.css" rel="preload" as="style">
-    <link href="CSS/style-Index.css" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 </head>
 
 <body class="fondo">
 
-     <!-- Logo e imagen -->
-     <header>
-        <h1> <a href="index.html"> <img class="img-navegacion logo-img"
-                    src="img/Coffe-cafe-logo-by-DEEMKA-STUDIO-2-580x406.png">
+    <header class="contenedor">
+        <h1 class="logo">
+            <a href="index.html">
+                <img class="logo__imagen" src="img/Coffe-cafe-logo-by-DEEMKA-STUDIO-2-580x406.png"
+                    alt="logo de la cafeteria">
             </a>
         </h1>
-        <div class="disenio-eslogan">
-            <p class="titulo1 "> Disfruta tus mejores momentos con un café</p>
+
+        <div class="eslogan">
+            <p class="eslogan__frase"> Disfruta tus mejores
+                <br>
+                momentos con un café
+            </p>
         </div>
     </header>
 
-    <div>
-        <nav class="contenedor disenio-contenedor prueba">
-            <ul class="acomodo">
-                <li> <a class="enlaces" href="index.html"> Inicio</a> </li>
-                <li> <a class="enlaces" href="nosotro.html"> Nosotros</a> </li>
-                <li> <a class="enlaces" href="menu.html"> Menú </a> </li>
-                <li> <a class="enlaces" href="cafe.html"> Café</a> </li>
-                <li> <a class="enlaces espacio" href="contacto.html"> Contacto</a> </li>
+    <div class="contenedor--navegacion">
+        <nav>
+            <ul class="enlaces fondo--disenio">
+                <li> <a class="enlace__disenio" href=" index.html">Inicio</a> </li>
+                <li> <a class="enlace__disenio" href="nosotro.html">Nosotros</a> </li>
+                <li> <a class="enlace__disenio" href="menu.html">Menú </a> </li>
+                <li> <a class="enlace__disenio" href="cafe.html">Café</a> </li>
+                <li> <a class="enlace__disenio" espacio" href="contacto.html">Contacto</a> </li>
             </ul>
         </nav>
     </div>
+
+
+    
 
     <main>
         <form >

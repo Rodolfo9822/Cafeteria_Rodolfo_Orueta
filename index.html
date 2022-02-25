@@ -25,7 +25,8 @@
     <header class="contenedor">
         <h1 class="logo">
             <a href="index.html">
-                <img class="logo__imagen" src="img/Coffe-cafe-logo-by-DEEMKA-STUDIO-2-580x406.png">
+                <img class="logo__imagen" src="img/Coffe-cafe-logo-by-DEEMKA-STUDIO-2-580x406.png"
+                    alt="logo de la cafeteria">
             </a>
         </h1>
 
@@ -37,14 +38,14 @@
         </div>
     </header>
 
-    <div>
+    <div class="contenedor--navegacion">
         <nav>
-            <ul>
-                <li> <a href=" index.html">Inicio</a> </li>
-                <li> <a href="nosotro.html">Nosotros</a> </li>
-                <li> <a href="menu.html">Menú </a> </li>
-                <li> <a href="cafe.html">Café</a> </li>
-                <li> <a espacio" href="contacto.html">Contacto</a> </li>
+            <ul class="enlaces fondo--disenio">
+                <li> <a class="enlace__disenio" href=" index.html">Inicio</a> </li>
+                <li> <a class="enlace__disenio" href="nosotro.html">Nosotros</a> </li>
+                <li> <a class="enlace__disenio" href="menu.html">Menú </a> </li>
+                <li> <a class="enlace__disenio" href="cafe.html">Café</a> </li>
+                <li> <a class="enlace__disenio" espacio" href="contacto.html">Contacto</a> </li>
             </ul>
         </nav>
     </div>
@@ -111,28 +112,84 @@
     </section>
 
 
-    <footer>
-
+    <footer class="contenedor--footer">
         <div>
+
             <div>
-                <h3>Redes sociales</h3>
+                <h3 class="redes--titulo">Redes sociales</h3>
             </div>
 
-            <ul class="acomodo-enlaces">
-                <li><a href="#"> Facebook</a> </li>
-                <li><a href="#"> Instagram</a></li>
-                <li><a href="#"> Tik tok</a></li>
+            <ul class="redes__enlaces">
+                <li><a class="redes__enlace acomodo " href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#D2EFF6" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg>
+                        Facebook</a>
+                </li>
+
+                <li><a class="redes__enlace acomodo " href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#D2EFF6" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg>
+                        Instagram</a>
+                </li>
+
+                <li><a class="redes__enlace acomodo" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#D2EFF6" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
+                        </svg>
+                        Tik tok</a>
+                </li>
             </ul>
         </div>
 
-        <div>
+        <div class="copy--disenio">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="52"
+                height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#D2EFF6" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="12" cy="12" r="9" />
+                <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+            </svg>
             <p>Copyright Rodolfo Orueta Zataray</p>
         </div>
 
-        <div>
+        <div class="ubicacion--disenio">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-search" width="52"
+                height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#D2EFF6" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v10" />
+                <path d="M9 4v13" />
+                <path d="M15 7v5" />
+                <circle cx="16.5" cy="17.5" r="2.5" />
+                <path d="M18.5 19.5l2.5 2.5" />
+            </svg>
             <p>Ubicacion Mexico City.</p>
         </div>
 
+        <div class="horario">
+            <p class="horario__titulo">
+                Horario de atencion
+            </p>
+            <p class="horario__horas">
+                Lunes a viernes 8:00 am - 10 pm
+            </p>
+            <p class="horario__horas">
+                Sabado y Domingo 8:00 am - 5 pm
+            </p>
+        </div>
     </footer>
 
 </body>

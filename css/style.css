@@ -10,10 +10,17 @@ body{
     background-attachment: fixed;
     font-family: var(--tipoLetra);
 }
-
+*{
+    margin:0;
+}
 :root{
     --tipoLetra: 'IBM Plex Serif', serif;
     --colorLetra: #FEF7E2;
+    --fondoElementos: linear-gradient(rgba(115,89,69,0.95), rgba(115,89,69,0.95));
+    --bordeElemento: .35rem solid var(--colorLetra);
+    --borderRadius: 1.7rem;
+
+
 }
 
 /* ##################################################
@@ -55,15 +62,93 @@ body{
                 CSS de barra de navegacion
 */
 
+.contenedor--navegacion{
+    max-width: 130rem;
+    margin: 0 auto;
+    
+}
+
+.fondo--disenio{
+    padding: .8rem 0;
+    border-radius: var(--borderRadius) ;
+    border: var(--bordeElemento) ;
+    margin-bottom: 15rem;
+}
+
+.enlaces{
+    background: var(--fondoElementos) ;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.enlace__disenio{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--colorLetra);
+    font-weight: 400;
+}
+
+/* ##################################################
+    ##################################################
+                CSS footer
+*/
+
+.contenedor--footer{
+    margin-top: 20rem;;
+    background: var(--fondoElementos);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: var(--bordeElemento);
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    padding-bottom: 2rem ;
+}
+.redes--titulo{
+    margin-top: 2rem
+}
+
+.redes__enlaces{
+    margin-top: 2rem;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.redes__enlace, .horario__horas{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--colorLetra);
+    font-weight: 400;
+}
+
+.horario, .redes--titulo{
+    text-align: center  ;
+}
+
+.horario__titulo, .horario__horas{
+    margin-top: 1.5rem;
+}
 
 
+.copy--disenio, .ubicacion--disenio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.copy--disenio, .ubicacion--disenio, .redes--titulo, .horario__titulo{
+    color: var(--colorLetra);
+    font-size: 1.7rem;
+    font-weight: 400;
+}
 
-
-
-
-
-
+.acomodo{
+    display: flex;
+    align-items: center;
+}
 
 
 
