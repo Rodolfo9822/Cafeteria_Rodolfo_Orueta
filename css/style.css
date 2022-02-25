@@ -1,0 +1,69 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    background: linear-gradient(rgba(5,7,12,0.45),rgba(5,7,12,0.45)), url("../img/back2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: var(--tipoLetra);
+}
+
+:root{
+    --tipoLetra: 'IBM Plex Serif', serif;
+    --colorLetra: #FEF7E2;
+}
+
+/* ##################################################
+    ##################################################
+                CSS de eslogan e imagen
+*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.logo{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.logo__imagen{
+    max-width: 18rem;
+    max-height: 15rem;
+}
+
+.eslogan{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.eslogan__frase{
+    font-size: 3.5rem;
+    color: var(--colorLetra);
+    font-weight: 400;
+}
+
+/* ##################################################
+    ##################################################
+                CSS de barra de navegacion
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
