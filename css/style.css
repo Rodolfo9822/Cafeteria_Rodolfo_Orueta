@@ -18,7 +18,7 @@ body{
 :root{
     --tipoLetra: 'IBM Plex Serif', serif;
     --colorLetra: #FEF7E2;
-    --fondoElementos: linear-gradient(rgba(115,89,69,0.95), rgba(115,89,69,0.95));
+    --fondoElementos: linear-gradient(rgba(100,76,58,0.95), rgba(100,76,58,0.95));
     --bordeElemento: .35rem solid var(--colorLetra);
     --borderRadius: 1.7rem;
     --tituloLetTamanio: 3rem;
@@ -116,7 +116,7 @@ button{
 
 .enlace__disenio{
     text-decoration: none;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     color: var(--colorLetra);
     font-weight: 400;
 }
@@ -464,6 +464,86 @@ button{
     color: var(--colorLetra);
     font-weight: var(--WeightTitulo);   
 }
+
+
+
+
+/* ######################################################################################################################################################
+   ######################################################################################################################################################
+   ######################################################################################################################################################
+   ######################################################################################################################################################
+                                                                            CSS Menú
+*/
+
+
+.fondo--menuE{
+    background: var(--fondoElementos);
+}
+
+.menu--frase{
+    padding: 1.5rem 0;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.titulo-Menu__eslogan{
+    text-align: center;
+    font-size: var(--tituloLetTamanio);
+    color: var(--colorLetra);
+    font-weight: 600; 
+}
+
+.contenedor--productos__estilo{
+    background: var(--fondoElementos);
+    border-radius: var(--borderRadius);
+    border: var(--bordeElemento);
+}
+
+.contenedor--productos{
+    max-width: 140rem;
+    margin: 10rem auto 0rem auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+
+.grid--cafe{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin: 0rem 2rem;
+}
+
+.grid--cafe__titulo{
+    margin-top: 3rem;
+    grid-column: 1 / 4 ;
+}
+
+.grid--cafe__espacio{
+    text-align: center;   
+}
+
+.grid--cafe__espacio{
+    margin-top: 4rem;
+}
+
+.grid--cafe__producto{
+    width: 35rem;
+    height: 30rem;
+    border-radius: var(--borderRadius);
+    border: var(--bordeElemento);
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--colorLetra);
+    font-weight: var(500);     
+    margin-top: 2rem;
+}
+
+
 
 
 
