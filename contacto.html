@@ -51,37 +51,42 @@
 
 
 
-    <main>
-        <form >
-            <fieldset>
-                <legend>Llena los siguientes campos para contactarnos</legend>
-                <div >
-                    <div>
-                        <label>Nombre</label>
-                        <input type="text" placeholder="Nombre">
+    <main class = "contenedor--contacto" >
+        <form class="contenedor--contacto__estilo ">
+            <fieldset class="contenedor--contacto__fieldset" >
+                <legend class="contenedor--contacto__legend" >Llena los siguientes campos para contactarnos</legend>
+                
+                <div class="contenedor--grid">
+                    <div class="grid--datos__acomodo">
+                        <label class="contenedor--grid__label" >Nombre</label>
+                        <input class="contenedor--grid__datos estilo--datos" type="text" placeholder="Nombre">
                     </div>
 
-                    <div >
-                        <label>Apellido</label>
-                        <input t" type="text" placeholder="Apellido">
+                    <div class="grid--datos__acomodo">
+                        <label class="contenedor--grid__label" >Apellido</label>
+                        <input class="contenedor--grid__datos estilo--datos " type="text" placeholder="Apellido">
                     </div>
 
-                    <div                         <label>Correo</label>
-                        <input t" type="email" placeholder="Email">
-                    </div>
-                    <div >
-                        <label>Teléfono </label>
-                        <input t" type="tel" placeholder="Teléfono ">
+                    <div class="grid--datos__acomodo"> 
+                        <label class="contenedor--grid__label" >Correo</label>
+                        <input class="contenedor--grid__datos estilo--datos "  type="email" placeholder="Email">
                     </div>
 
-                    <div 
-                        <label>Mensaje</label>
-                        <textarea t" placeholder="Déjanos un mensaje para atenderte mejor"></textarea>
+                    <div class="grid--datos__acomodo">
+                        <label class="contenedor--grid__label" >Teléfono </label>
+                        <input class="contenedor--grid__datos estilo--datos "  type="tel" placeholder="Teléfono ">
+                    </div>
+
+                    <div class="grid--datos__acomodo textarea--acomodo">
+                        <label class="contenedor--grid__label" > Mensaje</label>
+                        <textarea  class="textarea--mensaje estilo--datos"  placeholder="Déjanos un mensaje para atenderte mejor"></textarea>
                     </div>
                 </div>
-                <div r-boton">
-                    <button viar</button>
+                
+                <div class="acomodo--boton" >
+                    <a href="#"> <button>Enviar </button> </a>
                 </div>
+
             </fieldset>
         </form>
     </main>
