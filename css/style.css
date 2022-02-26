@@ -10,17 +10,22 @@ body{
     background-attachment: fixed;
     font-family: var(--tipoLetra);
 }
+
 *{
     margin:0;
 }
+
 :root{
     --tipoLetra: 'IBM Plex Serif', serif;
     --colorLetra: #FEF7E2;
     --fondoElementos: linear-gradient(rgba(115,89,69,0.95), rgba(115,89,69,0.95));
     --bordeElemento: .35rem solid var(--colorLetra);
     --borderRadius: 1.7rem;
-
-
+    --tituloLetTamanio: 3rem;
+    --ParraLetTamanio: 2rem;
+    --WeightTitulo: 500;
+    --WeightParrafo: 400;
+    --Espacio: elementos: 30rem;
 }
 
 /* ##################################################
@@ -57,8 +62,10 @@ body{
     font-weight: 400;
 }
 
+
 /* ##################################################
-    ##################################################
+   ##################################################
+   ##################################################
                 CSS de barra de navegacion
 */
 
@@ -90,7 +97,8 @@ body{
 }
 
 /* ##################################################
-    ##################################################
+   ##################################################
+   ##################################################
                 CSS footer
 */
 
@@ -150,5 +158,68 @@ body{
     align-items: center;
 }
 
+/* ##################################################
+   ##################################################
+   ##################################################
+                CSS web inicio
+*/
+
+/* Welcomte to coffe house */
+.contenedor--welcome{
+    max-width: 160rem;
+    margin: 0rem auto 15rem;
+}
+
+
+/* frase de la semana */
+.contenedor--frase{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 3rem;
+}
+
+.imagen--frase{
+    margin-right: 1.5rem;
+    width: 95rem;
+    height: 60rem;
+}
+
+.imagen--frase__disenio{
+    border: var(--bordeElemento);
+    border-radius: var(--borderRadius);
+}
+
+.acomodo-frases{
+    margin-left: 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+ 
+/* Clase que comparten codigo */
+
+.contenedor--welcome__titulo, .frase__titulo{
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--colorLetra);
+    font-weight: 00;
+}
+
+.contenedor--welcome__parrafo, .frase__estilo{
+    text-align: justify;
+    font-size: 2rem;
+    color: var(--colorLetra);
+    font-weight: 400;
+    margin: 0 4rem;
+    padding-bottom: 3rem;
+}
+
+.frases, .contenedor--welcome__disenio {
+    background: var(--fondoElementos);
+    border-radius: var(--borderRadius);
+    border: var(--bordeElemento);
+}
 
 
