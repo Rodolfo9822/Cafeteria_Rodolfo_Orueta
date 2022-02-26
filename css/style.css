@@ -28,8 +28,24 @@ body{
     --Espacio: elementos: 30rem;
 }
 
+h2{
+    padding-top: 3rem;
+    text-align: center;
+    font-size: var(--tituloLetTamanio);
+    color: var(--colorLetra);
+    font-weight: var(--WeightTitulo);  
+}
+
+p{
+    text-align: justify;
+    font-size: var(--ParraLetTamanio);
+    color: var(--colorLetra);
+    font-weight: var(--WeightParrafo);    
+}
+
 /* ##################################################
-    ##################################################
+   ##################################################
+   ##################################################
                 CSS de eslogan e imagen
 */
 
@@ -91,7 +107,7 @@ body{
 
 .enlace__disenio{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--colorLetra);
     font-weight: 400;
 }
@@ -131,8 +147,13 @@ body{
     font-weight: 400;
 }
 
-.horario, .redes--titulo{
-    text-align: center  ;
+.redes--titulo{
+    text-align: center ;
+}
+.horario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .horario__titulo, .horario__horas{
@@ -158,16 +179,17 @@ body{
     align-items: center;
 }
 
-/* ##################################################
-   ##################################################
-   ##################################################
-                CSS web inicio
+/* ######################################################################################################################################################
+   ######################################################################################################################################################
+   ######################################################################################################################################################
+   ######################################################################################################################################################
+                                                                            CSS INICIO
 */
 
 /* Welcomte to coffe house */
 .contenedor--welcome{
     max-width: 160rem;
-    margin: 0rem auto 15rem;
+    margin: 0 auto 15rem;
 }
 
 
@@ -200,18 +222,10 @@ body{
 /* Clase que comparten codigo */
 
 .contenedor--welcome__titulo, .frase__titulo{
-    padding: 2rem;
-    text-align: center;
-    font-size: 3rem;
-    color: var(--colorLetra);
-    font-weight: 00;
+  margin-bottom: 3rem;
 }
 
 .contenedor--welcome__parrafo, .frase__estilo{
-    text-align: justify;
-    font-size: 2rem;
-    color: var(--colorLetra);
-    font-weight: 400;
     margin: 0 4rem;
     padding-bottom: 3rem;
 }
@@ -222,4 +236,138 @@ body{
     border: var(--bordeElemento);
 }
 
+
+/* ######################################################################################################################################################
+   ######################################################################################################################################################
+   ######################################################################################################################################################
+   ######################################################################################################################################################
+                                                                            CSS NOSOTROS
+*/
+
+/* Quienes somos?  */
+.Contenedor--Quienes{
+    display: grid;
+    grid-template-columns: 38% 62%;
+    column-gap: 1.5rem;
+}
+
+.imagen--nosotros{
+    margin-left: 3rem;
+    width: 65rem;
+    height: 70rem;
+    border-radius: var(--borderRadius);
+    border: var(--bordeElemento);
+}
+
+.historia{
+    margin: 7rem 0;
+    margin-right: 5rem;
+}
+
+
+/*Por que iniciamos....?*/
+
+.contenedor--iniciamos{
+    max-width: 170rem;
+    margin: 15rem auto 0 auto;
+}
+
+.iniciamos__contenedor--parrafo{
+    padding-bottom: 3rem;
+}
+
+/* Clase que comparten codigo */
+
+.historia div, .iniciamos__parrafo{
+    margin: 3rem 3rem 0rem 3rem;
+}
+
+.iniciamos, .historia{
+    border-radius: var(--borderRadius);
+    border: var(--bordeElemento);
+    background: var(--fondoElementos);
+}
+
+/* ######################################################################################################################################################
+   ######################################################################################################################################################
+   ######################################################################################################################################################
+   ######################################################################################################################################################
+                                                                            CSS Cafe
+*/
+
+.contenedor--cafe{
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen--empaqueCafe{
+    margin: 0 auto;
+}
+
+.imagen--empaqueCafe__estilo, .tamanio--video{
+    width: 155rem;
+    height: 90rem;
+}
+
+.contenedor--img-cafe{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.contenedor--img-cafe__estilo{
+    width: 85rem;
+    height: 50rem;
+}
+
+
+.contenedor--solicitar__estilo{
+    max-width: 120rem;   
+    background: var(--fondoElementos);
+}
+
+.contenedor--solicitar__estilo div{
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+
+}
+.extra{ margin: 0 2rem}
+
+.boton--nosotros{
+    border: none;
+    padding: 2rem 4rem;
+    font-size: var(--ParraLetTamanio);
+    font-weight: 700;
+    background-color: var(--colorLetra);
+    border-radius: var(--borderRadius);
+}
+
+.boton--nosotros:hover{
+    cursor: pointer;
+}
+
+
+/* Clase que comparten codigo */
+.contenedor--acerca, .contenedor--cultivamos{
+    max-width: 180rem;
+    margin: 5rem auto 0rem auto;
+}
+
+
+.contenedor--acerca, .contenedor--cultivamos, .video--cafe,.contenedor--img-cafe,.contenedor--solicitar {
+    margin: 15rem auto 0rem auto;
+}
+
+.contenedor--acerca__parrafo, .Contenedor--cultivamos__parrafo{
+    margin: 3rem 3rem;
+}
+
+.contenedor--acerca, .contenedor--cultivamos, .tamanio--video,.contenedor--solicitar__estilo,
+.imagen--empaqueCafe__estilo, .contenedor--img-cafe__estilo
+{
+    background: var(--fondoElementos);
+    border-radius: var(--borderRadius);
+    border: var(--bordeElemento);
+}
 
