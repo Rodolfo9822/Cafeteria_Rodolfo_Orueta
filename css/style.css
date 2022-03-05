@@ -1029,13 +1029,13 @@ button{
 
 .menu--frase{
     padding: 1.5rem 0;
-    max-width: 120rem;
+    max-width: 90%;
     margin: 0 auto;
 }
 
 .titulo-Menu__eslogan{
     text-align: center;
-    font-size: var(--tituloLetTamanio);
+    
     color: var(--colorLetra);
     font-weight: 600; 
 }
@@ -1047,24 +1047,23 @@ button{
 }
 
 .contenedor--productos{
-    max-width: 140rem;
+    max-width: 90%;
     margin: 10rem auto 0rem auto;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    padding-bottom:10rem ;
 }
-
 
 
 .grid--cafe{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
+    gap: 5rem;
     margin: 0rem 2rem;
 }
 
 .grid--cafe__titulo{
-    margin-top: 3rem;
+    margin: 3rem 0;
     grid-column: 1 / 4 ;
+    font-size: 3.5rem;
+
 }
 
 .grid--cafe__espacio{
@@ -1076,8 +1075,8 @@ button{
 }
 
 .grid--cafe__producto{
-    width: 35rem;
-    height: 30rem;
+    width: 90%;
+    height: 70%;
     border-radius: var(--borderRadius);
     border: var(--bordeElemento);
 }
@@ -1092,8 +1091,55 @@ h3 {
 
 
 
+@media (min-width: 2px) {
+
+    .contenedor--productos{
+        max-width: 60%;
+        margin: 10rem auto 0rem auto;
+    }
+
+    .grid--cafe{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .titulo-Menu__eslogan{
+        font-size: 1.5rem;
+    }
+   
+}
 
 
+
+@media (min-width: 540px) {
+    .titulo-Menu__eslogan{
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 641px) {
+    .grid--cafe{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+
+    .titulo-Menu__eslogan{
+        font-size: var(--tituloLetTamanio);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid--cafe{
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    
+}
+
+@media (min-width: 1080px) {
+    .titulo-Menu__eslogan{
+        font-size: var(--tituloLetTamanio);
+    }
+}
 
 
 
