@@ -48,9 +48,16 @@ button{
     border: none;
     padding: 2rem 7rem;
     font-size: var(--ParraLetTamanio);
-    font-weight: 700;
+    font-weight: 600;
     background-color: var(--colorLetra);
     border-radius: var(--borderRadius);
+    transition: background-color 1.5s ease;
+    transition: padding 1s ease;
+}
+
+button:hover{
+    background-color: white;
+    padding: 1.5rem 6rem;
 }
 
 /*                                              ##################################################
@@ -73,20 +80,33 @@ button{
 .logo__imagen{
     max-width: 13rem;
     max-height: 10rem;
+    transition: transform 1s ease-out;
 }
 
 .eslogan{
     display: flex;
     justify-content: right;
     align-items: center;
-    margin-right: 10rem;
+    margin-right: 5rem;
 }
 
 .eslogan__frase{
     font-size: 2rem;
     color: var(--colorLetra);
     font-weight: 400;
+    transition: background-color 1s ease-out;
+    transition: font-size 1s ease-out;
 }
+
+.eslogan__frase:hover{
+    font-size: 2.5rem;
+    font-weight: 600;  
+}
+
+.logo__imagen:hover{
+    transform: scale(1.2);
+}
+
 
 @media (min-width: 767px) {
     .eslogan__frase{
@@ -96,6 +116,15 @@ button{
     .logo__imagen{
         max-width: 18rem;
         max-height: 15rem;
+    }
+
+    .eslogan__frase:hover{
+        font-size: 4rem;
+        font-weight: 600;  
+    }
+
+    .logo__imagen:hover{
+        transform: scale(1.5);
     }
 }
 
@@ -130,6 +159,7 @@ button{
     color: var(--colorLetra);
     font-weight: 400;
 }
+
 
 
 @media (min-width: 0px) {
@@ -835,15 +865,18 @@ button{
 
 
 .imagen--empaqueCafe{
-   width: 75%;
-   margin: 0 auto;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.imagen--empaqueCafe__estilo{
+    width: 90%;
 }
 
 
-
 .contenedor--img-cafe__estilo{
-    width: 90%;
-    
+    width: 75%;
 }
 
 /* Clase que comparten codigo */
